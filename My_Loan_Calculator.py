@@ -1,4 +1,4 @@
-#Declare and initialize variables.
+#Declare and add value of 0 to variables.
 
 monthly_amount = 0
 
@@ -30,7 +30,7 @@ loan_duration_years = float(str_loan_duration_years)
 
 number_of_payments = loan_duration_years * 12
 
-#Perform calculation to obtain monthly payments based on formula.
+#Obtain monthly payments based on formula M = L[i(1+i)n] / [(1+i)n+1]
 monthly_amount = loan * interest_rate * (1 + interest_rate) * number_of_payments\
     /((1 + interest_rate) * number_of_payments - 1)
 
