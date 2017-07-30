@@ -31,6 +31,10 @@ loan_duration_years = float(str_loan_duration_years)
 number_of_payments = loan_duration_years * 12
 
 #Obtain monthly payments based on formula M = L[i(1+i)n] / [(1+i)n+1]
+# M = monthly_amount
+# L = loan
+# i = interest_rate
+# n = number_of_payments
 monthly_amount = loan * interest_rate * (1 + interest_rate) * number_of_payments\
     /((1 + interest_rate) * number_of_payments - 1)
 
