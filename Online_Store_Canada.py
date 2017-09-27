@@ -1,11 +1,10 @@
 # Declare the value of total_charge to be zero.
 total_charge = 0
-
-# Request the user to input the money amount for his/her total_cart value.
+# Request the user to input the money amount for his/her purchase (cart_value).
 # Converted that total cart_value to a float number.
 cart_value = float(input("Enter the total charge from online order: "))
 
-# Request user to input what Country are they buying from. Converted that to all caps.
+# Request user to input what Country are they buying from. Convert that to Country to all caps.
 country = input("Enter Country of origin: ").upper()
 
 # IF and OR statements for all inputed data.
@@ -15,7 +14,7 @@ if country == "CANADA":
     if province == "ALBERTA":
         total_charge = cart_value + (cart_value * .05)
         print(total_charge)
-
+        
 # Lines 20 to 25 were the original lines of code. Which were re-written as single lines of code.
         # if province == "ALBERTA":
         #     total_charge = cart_value + (cart_value * .05)
@@ -42,12 +41,12 @@ if country == "CANADA":
         total_charge = cart_value + (cart_value * .13)
         print(total_charge)
 
-# Any province that "ARE NOT" the ones listed in the ELIF statement will get charge 5% and an additional 6%
+# Any Provinces that "ARE NOT" the ones listed in the ELIF statement will get charge 5% and an additional 6%
     elif province != "ALBERTA" or "ONTARIO" or "NEW BRUNSWICK" or "NOVA SCOTIA":
         total_charge = cart_value + (cart_value * .05) + (cart_value * .06)
         print(total_charge)
 
-# Any Country that is not Canada will not get charge a tax percentage
+# Any Country that is not Canada will not get charge a tax percentage.
 else:
     total_charge = cart_value
     print(total_charge)
