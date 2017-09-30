@@ -1,4 +1,4 @@
-#This is "Roll the Dice Program"
+#This is a "Roll the Dice Program"
 #Declareed the value of leave_program.
 leave_program = 0
 #Overall "while loop" as long as the input from user is not 'q' than the program will continue.
